@@ -1,0 +1,224 @@
+<!--doctype html-->
+<html>
+<head>
+
+<title>Biodata</title>
+
+<style>
+body{
+margin:0px;
+padding:0px;
+background-color:#ffffff;
+}
+ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+nav{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 2px;
+	font-family: calibri;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width:100%;
+	box-sizing: border-box;
+	padding: 10px 50px;
+	background-color:#ccffcc; 
+	z-index: 1;
+}
+.menu{
+	display: flex;
+}
+.menu li a{
+	padding: 10px 15px;
+	color:#ff0066;
+	font-size: 25px;
+	
+}
+.toggle{
+    display: none;
+}
+.active a,
+.menu li a:hover{
+    background-color:#ffaab0;
+    color:#FFF!important;
+    font-weight: bold;
+    transition: all ease 0.5s;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 3px solid #ddd;
+}
+
+tr:hover {background-color: #f2ecf9;}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+}
+ 
+th {
+  height: 60px;
+}
+
+td {
+  height: 60px;
+  text-align: center;
+}
+
+h1 {
+  color:#003300;
+}
+h1 {
+  text-align:center; 
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ffd;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: png;
+  color: white;
+  cursor: pointer;
+  padding: 0px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+ 
+</style>
+	
+</head>
+<body>
+
+<nav>
+	<a href="index.html" class="logo"><img src="image/Logo GIF.gif" 
+        width="200" height="200"></a>
+    <div class="toggle"></div>
+    <ul class="menu">
+    <li><a href="index.html" >Home</a></li>
+    <li class="active"><a href="biodata.html">BIODATA</a></li>
+    <li><a href="education.html">EDUCATION</a></li>
+    <li><a href="experience.html">EXPERIENCE</a></li>
+    <li><a href="family.html">FAMILY</a></li>
+    <li><a href="gallery.html">GALLERY</a></li>	
+	
+</ul>
+</nav>
+    <img src="image/banner.jpg" width="1400" height="270">
+
+<h1>About Me</h1>
+
+<table align="center">
+  <tr>
+    <th><font color="#990000">REGARDING ME</th></font>
+  </tr>
+  <tr>
+    <td><b><font color="#400080">Name</td></b></font>
+    <td><b><font color="#002699">Aina Balqis bt Ahmad Faizal</td></b></font>
+  </tr>
+  
+<tr>
+    <td><b><font color="#400080">Age</td></b></font>
+    <td><b><font color="#002699">20</td></b></font>
+  </tr>
+  
+<tr>
+   <td><b><font color="#400080">Date of Birth</td></b></font>
+   <td><b><font color="#002699">19<sup>th</sup> October 2000</td></b></font>
+  </tr>
+
+<tr>
+   <td><b><font color="#400080">Place of Birth</td></b></font>
+   <td><b><font color="#002699">Wilayah Persekutuan Kuala Lumpur</td></b></font>
+  </tr>
+
+<tr>
+   <td><b><font color="#400080">Religon</td></b></font>
+   <td><b><font color="#002699">Islam</td></b></font>
+  </tr>
+
+<tr>
+   <td><b><font color="#400080">Hometown</td></b></font>
+   <td><b><font color="#002699">Teluk Intan, Perak</td></b></font>
+  </tr>
+
+<tr>
+   <td><b><font color="#400080">Siblings</td></b></font>
+   <td><b><font color="#002699">Four</td></b></font>
+  </tr>
+
+<tr>
+   <td><b><font color="#400080">Contact</td></b></font>
+   <td><b><font color="#002699">ainabalqis.af@gmail.com</td></b></font>
+  </tr>
+
+<tr>
+   <td><b><font color="#400080">Hobby</td></b></font>
+   <td><b><font color="#002699"><ul><li>-Drawing</li><br>
+                                    <li>-Singing</li><br>
+                                    <li>-Sleeping</li>
+   </td></b></font>
+  </tr>
+
+  
+</table>
+
+<br><br><br>
+
+<table align="center">
+<div class="footer" bgcolor="maroon">
+  <a href="https://www.facebook.com/aina.balqis.587606/" target="blank"><b>My Facebook Account</b><border="0" height="100" width="100"  class="zoom" abbr title="facebook" ></a>
+  <p> This website is designed for IMD311</p>
+</div>
+</table>
+
+<img src="image/top.png" onclick="topFunction()" id="myBtn" title="Go to top">
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>

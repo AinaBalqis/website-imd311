@@ -1,0 +1,261 @@
+<!--doctype html-->
+<html>
+<head>
+
+<title>Story of My Life</title>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<style>
+body{
+margin:0px;
+padding:0px;
+background-color:#ffffff;
+}
+
+ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+nav{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 2px;
+	font-family: calibri;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width:100%;
+	box-sizing: border-box;
+	padding: 10px 50px;
+	background-color:#ccffcc; 
+	z-index: 1;
+
+
+}
+.menu{
+	display: flex;
+}
+.menu li a{
+	padding: 5px 10px;
+	color:ff006f;
+	font-size: 25px;
+	
+}
+.toggle{
+    display: none;
+}
+.active a,
+.menu li a:hover{
+    background-color:#ffaab0;
+    color:#FFF!important;
+    font-weight: bold;
+    transition: all ease 0.5s;
+}
+
+.img{
+height:40%;
+position:absolute;
+bottom:5%;
+left:20%;
+transform:translatex(-70%);
+}
+
+.img2{
+height:30%;
+position:absolute;
+bottom:-10%;
+left:45%;
+transform:translatex(-70%);
+}
+
+.img3{
+height:20%;
+position:absolute;
+bottom:-5%;
+left:60%;
+transform:translatex(-70%);
+
+}
+
+body {
+  color: #008080;
+}
+
+h1 {
+  color: green;
+}
+h1 {
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ffd;
+}
+
+#myBtn {
+  display: none;
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: png;
+  color: white;
+  cursor: pointer;
+  padding: 0px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+</style>
+
+<am>
+
+  p {outline-color:red;}
+
+p.outset {outline-style: outset;}
+
+</am>
+
+
+</style>
+</head>
+<body>
+
+
+<nav>
+	<a href="index.html" class="logo"><img src="image/Logo GIF.gif" 
+        width="200" height="200"></a>
+    <div class="toggle"></div>
+    <ul class="menu">
+    <li class="active"><a href="index.html" >Home</a></li>
+    <li><a href="biodata.html">BIODATA</a></li>
+    <li><a href="education.html">EDUCATION</a></li> 
+    <li><a href="experience.html">EXPERIENCE</a></li>
+    <li><a href="family.html">FAMILY</a></li>
+    <li><a href="gallery.html">GALLERY</a></li>	
+    	
+</ul>
+</nav>
+
+
+
+    <img src="image/banner.jpg" width="1400" height="248">
+    <img alt="img" class="img" src="image/me.h.jpeg">
+
+<am> 
+    
+    <h1 style="font-family:verdana">Sneak Peek of My Life.</h1>
+    <p style="font-family:verdana" align="center"> Hello this is Balqis and you are on my page!</p>
+    <p style="font-family:verdana" align="center"> I am a final student in Universiti Teknologi Mara Merbok Kedah (UiTMK)</p>
+    <p style="font-family:verdana" align="center"> and this is my website to show you about me and my life</p>
+
+</am>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <a href="https://www.instagram.com/_ainabalqis__/" target="_blank"><img alt="img2" class="img2" src="image/instagram.png"></a>
+    
+    <a href="https://twitter.com/BalqisChia" target="_blank"><img alt="img3" class="img3" src="image/twitter.jpg"></a>
+    
+    <embed src="mp3/callme.mp3" hidden="true"></embed> 
+
+ <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=7912cd290251252103d7d268b50f9600b64b4ff4'></script>
+<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/774634/t/5"></script>
+
+<img src="image/top.png" onclick="topFunction()" id="myBtn" title="Go to top">
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+<div class="header">
+<div align="left">
+<span id="digitalclock" class="styling" ></span>
+
+<script>
+<!--
+
+/*
+* LCD Clock script- by Javascriptkit.com
+* Featured on/available at http://www.dynamicdrive.com/
+* This notice must stay intact for use
+*/
+
+var alternate=0
+
+function show(){
+var clockobj=document.getElementById? document.getElementById("digitalclock") : document.all.digitalclock
+var Digital=new Date()
+var hours=Digital.getHours()
+var minutes=Digital.getMinutes()
+var dn="AM"
+
+if (hours==12) dn="PM" 
+if (hours>12){
+dn="PM"
+hours=hours-12
+}
+if (hours==0) hours=12
+if (hours.toString().length==1)
+hours="0"+hours
+if (minutes<=9)
+minutes="0"+minutes
+
+if (alternate==0)
+clockobj.innerHTML=hours+"<font color='lime'> : </font>"+minutes+" "+"<sup>"+dn+"</sup>"
+else
+clockobj.innerHTML=hours+"<font color='black'> : </font>"+minutes+" "+"<sup>"+dn+"</sup>"
+alternate=(alternate==0)? 1 : 0
+setTimeout("show()",1000)
+}
+window.onload=show
+
+//-->
+</script>
+</div>
+</div>
+
+
+<br><br>
+<table align="center">
+<div class="footer" bgcolor="maroon">
+  <a href="https://www.facebook.com/aina.balqis.587606/" target="blank"><b>My Facebook Account</b><border="0" height="100" width="100"  class="zoom" abbr title="facebook" ></a>
+  <p> This website is designed for IMD311</p>
+</div>
+</table>
+
+
+</body>
+</html>
+

@@ -1,0 +1,225 @@
+<!--doctype html-->
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+
+<title>Gallery</title>
+
+<style>
+body{
+margin:0px;
+padding:0px;
+background-color:#e6ffe6;
+}
+ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+nav{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 2px;
+	font-family: calibri;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width:100%;
+	box-sizing: border-box;
+	padding: 10px 50px;
+	background-color:#ccffcc; 
+	z-index: 1;
+}
+.menu{
+	display: flex;
+}
+.menu li a{
+	padding: 10px 15px;
+	color:#ff0066;
+	font-size: 25px;
+	
+}
+.toggle{
+    display: none;
+}
+.active a,
+.menu li a:hover{
+    background-color:#ffaab0;
+    color:#FFF!important;
+    font-weight: bold;
+    transition: all ease 0.5s;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: png;
+  color: white;
+  cursor: pointer;
+  padding: 0px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+  
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ffd;
+}
+
+
+</style>	
+</head>
+<body>
+
+<nav>
+	<a href="index.html" class="logo"><img src="image/Logo GIF.gif" 
+        width="200" height="200"></a>
+    <div class="toggle"></div>
+    <ul class="menu">
+    <li><a href="index.html" >Home</a></li>
+    <li><a href="biodata.html">BIODATA</a></li>
+    <li><a href="education.html">EDUCATION</a></li>
+    <li><a href="experience.html">EXPERIENCE</a></li>
+    <li><a href="family.html">FAMILY</a></li>
+    <li class="active"><a href="gallery.html">GALLERY</a></li>	
+	
+</ul>
+</nav>
+    <img src="image/banner.jpg" width="1400" height="270">
+
+<div style="text-align:center">
+  <h2>My Gallery</h2>
+  <p>Click on the images below:</p>
+</div>
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="image/1g.jpg" alt="Me" style="width:80%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/2g.jpg" alt="Sisters" style="width:80%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/3g.jpg" alt="Friends" style="width:80%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/4g.jpg" alt="Homie" style="width:80%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/5g.jpg" alt="PLKN" style="width:80%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/6g.jpg" alt="Housemie" style="width:80%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/7g.jpg" alt="Me in Blues" style="width:80%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/8g.jpg" alt="Homie" style="width:80%" onclick="myFunction(this);">
+  </div>
+ <div class="column">
+    <embed src="image/v2.swf" alt="Shoes" style="width:80%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:50%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+<br><br>
+<table align="center">
+<div class="footer" bgcolor="maroon">
+  <a href="https://www.facebook.com/aina.balqis.587606/" target="blank"><b>My Facebook Account</b><border="0" height="100" width="100"  class="zoom" abbr title="facebook" ></a>
+  <p> This website is designed for IMD311</p>
+</div>
+</table>
+
+</body>
+</html>
+
